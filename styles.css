@@ -1,0 +1,37 @@
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f0f8;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    position: relative;
+}
+
+/* Contenedor del sobre */
+.letter-container {
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Imagen del sobre */
+.letter {
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto al pasar el ratón */
+.letter:hover {
+    transform: scale(1.05);
+}

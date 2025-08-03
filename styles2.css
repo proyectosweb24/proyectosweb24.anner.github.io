@@ -1,0 +1,132 @@
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f0f8;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    position: relative;
+    background-color: #fff0f5;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(177, 12, 183, 0.719);
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Contenedor de la imagen */
+.image-container {
+    margin-bottom: 20px;
+}
+
+/* Imagen Principal - Ajustada */
+.image {
+    width: 100%;
+    max-width: 200px;  /* Limita el tamaño máximo */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(103, 15, 144, 0.7);
+}
+
+/* Frase */
+.phrase-container {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    color: #9c1faa;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+/* Estilo para el triángulo de play */
+.play-button {
+    position: absolute;
+    bottom: 2%;
+    right: 5%;
+    cursor: pointer;
+    z-index: 2;  /* Asegura que esté encima de las otras imágenes */
+}
+
+.triangle {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto al pasar el ratón sobre el triángulo */
+.triangle:hover {
+    transform: scale(1.1);
+}
+
+/* Imágenes en las esquinas de la página */
+.corner-image {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease;
+    z-index: 1;  /* Asegura que las imágenes de las esquinas estén debajo del triángulo */
+}
+
+/* Posición de las imágenes en las esquinas de la página */
+.top-right {
+    top: 10px;
+    right: 10px;
+}
+
+.bottom-left {
+    bottom: 10px;
+    left: 10px;
+}
+
+/* Efecto al pasar el ratón sobre las imágenes */
+.corner-image:hover {
+    transform: scale(1.1);
+}
+
+/* Media Queries para Adaptación en Dispositivos Móviles */
+@media screen and (max-width: 768px) {
+    /* Ajustar el tamaño de la imagen principal */
+    .image {
+        max-width: 90%;  /* Reducir el tamaño máximo de la imagen en dispositivos más pequeños */
+    }
+
+    /* Ajustar las posiciones de las imágenes en las esquinas */
+    .corner-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* Ajustar el tamaño del triángulo */
+    .triangle {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Ajustar aún más los tamaños en pantallas más pequeñas */
+    .image {
+        max-width: 100%;
+    }
+
+    .corner-image {
+        width: 70px;
+        height: 70px;
+    }
+
+    /* Ajuste del tamaño del triángulo */
+    .triangle {
+        width: 35px;
+        height: 35px;
+    }
+}
