@@ -18,7 +18,7 @@ body, html {
     background-color: #fff0f5;
     border-radius: 12px;
     padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(239, 34, 212, 0.69);
     width: 80%;
     max-width: 600px;
     overflow: hidden; /* Asegura que las imágenes no se salgan del contenedor */
@@ -35,13 +35,13 @@ body, html {
     max-width: 500px;    /* Máximo ancho de la imagen */
     height: auto;        /* Mantiene las proporciones de la imagen */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(226, 59, 215, 0.74);
 }
 
 /* Frase */
 .phrase-container {
     margin-top: 20px;
-    padding: 10px;
+    padding: 40px;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 8px;
     color: #9c1faa;
@@ -52,15 +52,15 @@ body, html {
 /* Estilo para el triángulo de play */
 .play-button {
     position: absolute;
-    bottom: 2%;
-    right: 5%;
+    bottom: 3%;
+    right: 4%;
     cursor: pointer;
     z-index: 2;  /* Asegura que esté encima de las otras imágenes */
 }
 
 .triangle {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     transition: transform 0.3s ease;
 }
 

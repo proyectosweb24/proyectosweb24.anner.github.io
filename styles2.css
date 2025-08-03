@@ -40,7 +40,7 @@ body, html {
 /* Frase */
 .phrase-container {
     margin-top: 20px;
-    padding: 10px;
+    padding: 50px;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 8px;
     color: #9c1faa;
@@ -51,45 +51,20 @@ body, html {
 /* Estilo para el triángulo de play */
 .play-button {
     position: absolute;
-    bottom: 2%;
-    right: 5%;
+    bottom: 3%;
+    right: 4%;
     cursor: pointer;
     z-index: 2;  /* Asegura que esté encima de las otras imágenes */
 }
 
 .triangle {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     transition: transform 0.3s ease;
 }
 
 /* Efecto al pasar el ratón sobre el triángulo */
 .triangle:hover {
-    transform: scale(1.1);
-}
-
-/* Imágenes en las esquinas de la página */
-.corner-image {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    transition: transform 0.3s ease;
-    z-index: 1;  /* Asegura que las imágenes de las esquinas estén debajo del triángulo */
-}
-
-/* Posición de las imágenes en las esquinas de la página */
-.top-right {
-    top: 10px;
-    right: 10px;
-}
-
-.bottom-left {
-    bottom: 10px;
-    left: 10px;
-}
-
-/* Efecto al pasar el ratón sobre las imágenes */
-.corner-image:hover {
     transform: scale(1.1);
 }
 
